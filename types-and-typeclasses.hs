@@ -1,5 +1,4 @@
-{-
-    add m n
+{-  add m n
 
     @takes      Two integer numbers
     @returns    The addition of the two numbers
@@ -9,8 +8,7 @@
 add :: Integer -> Integer -> Integer
 add = \m n -> m + n
 
-{-
-    minus m n
+{-  minus m n
 
     @takes      Two integer numbers
     @returns    The subtraction of the two numbers
@@ -20,8 +18,7 @@ add = \m n -> m + n
 minus :: Integer -> Integer -> Integer
 minus = \m n -> m - n
 
-{-
-    multiply m n
+{-  multiply m n
 
     @takes      Two integer numbers
     @returns    The multiplication of the two numbers
@@ -31,8 +28,7 @@ minus = \m n -> m - n
 multiply :: Integer -> Integer -> Integer
 multiply = \m n -> m * n
 
-{-
-    divide m n
+{-  divide m n
 
     @takes      Two numbers
     @returns    The division of the two numbers
@@ -42,8 +38,7 @@ multiply = \m n -> m * n
 divide :: Double -> Double -> Double
 divide = \m n -> m / n
 
-{-
-    divide' m n
+{-  divide' m n
 
     @takes      Two integer numbers
     @returns    The division of the two numbers, but rounded result
@@ -53,8 +48,7 @@ divide = \m n -> m / n
 divide' :: Integer -> Integer -> Integer
 divide' = \m n -> m `div` n
 
-{-
-    modulus m n
+{-  modulus m n
 
     @takes      Two integer numbers
     @returns    The modulus of the two numbers
@@ -64,8 +58,7 @@ divide' = \m n -> m `div` n
 modulus :: Integer -> Integer -> Integer
 modulus = \m n -> m `mod` n
 
-{-
-    remainder m n
+{-  remainder m n
 
     @takes      Two integer numbers
     @returns    The remainder from the quotient
@@ -75,8 +68,7 @@ modulus = \m n -> m `mod` n
 remainder :: Integer -> Integer -> Integer
 remainder = \m n -> m `rem` n
 
-{-
-    quotient m n
+{-  quotient m n
 
     @takes      Two integer numbers
     @returns    The quotient of the two numbers
@@ -85,3 +77,13 @@ remainder = \m n -> m `rem` n
 -}
 quotient :: Integer -> Integer -> Integer
 quotient = \m n -> m `quot` n
+
+{-  whoami i d s
+
+    @takes      Age, height, and name of a person
+    @returns    Generates a string from the given inputs
+    @examples   whoami 28 172.5 "Muhit"  == "Hello, Muhit! You're 28 years old and your height is 172.5 cm."
+                whoami 35 164.3 "Parvez" == "Hello, Parvez! You're 35 years old and your height is 164.3 cm."
+-}
+whoami :: Integer -> Double -> String -> String
+whoami = \i d s -> "Hello, " ++ s ++ "! You're " ++ show i ++ " years old and your height is " ++ show d ++ " cm."
