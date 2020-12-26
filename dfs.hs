@@ -1,0 +1,1 @@
+data Graph a = Graph ([a],[(a,a)]) deriving (Show)
